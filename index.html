@@ -67,41 +67,6 @@
                 </div>
                 <br>
                 <div class="row text-center">
-<!--
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-8">
-                        <div class="col-sm-3">
-                            <a href="https://www.github.com/V-Kwong" target="_blank">
-                                <button type="button" class="btn btn-default btn-circle btn-lg padBtn">
-                                    <i class="fa fa-github"></i>
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="https://www.hackerrank.com/VKwong" target="_blank">
-                                <button type="button" class="btn btn-default btn-circle btn-lg padBtnCode">
-                                    <img alt="HackerRank" data-source="https://www.google.com/s2/favicons?domain=www.hackerrank.com" src="https://www.google.com/s2/favicons?domain=www.hackerrank.com" width="16" height="16">
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="https://leetcode.com/vinnyk97" target="_blank">
-                                <button type="button" class="btn btn-default btn-circle btn-lg padBtnCode">
-                                    <img alt="LeetCode" data-source="https://www.google.com/s2/favicons?domain=www.hackerrank.com" src="https://www.google.com/s2/favicons?domain=www.leetcode.com" width="16" height="16">
-                                </button>
-                            </a>
-                        </div>
-                        <div class="col-sm-3">
-                            <a href="mailto:wsvkwong@alumni.ubc.ca">
-                                <button type="button" class="btn btn-default btn-circle btn-lg padBtn">
-                                    <i class="glyphicon glyphicon-envelope"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-2"></div>
--->
-<!--                    <div class="text-center">-->
                         <a href="https://www.github.com/V-Kwong" target="_blank">
                             <button type="button" class="btn btn-default btn-circle btn-lg padBtn">
                                 <i class="fa fa-github"></i>
@@ -125,7 +90,6 @@
                                 <i class="glyphicon glyphicon-envelope"></i>
                             </button>
                         </a>
-<!--                    </div>-->
                 </div>
                 <br>
                 <div id="quote">
@@ -147,7 +111,7 @@
                 <div class="col-sm-4">
                     <h3>Emergence</h3>
                     <!-- TODO: link to moment and grid -->
-                    <p>Emergence is a startup that has yet to launch. The vision is to inspire ambitious lifestyles among young adults. Currently, Emergence consists of <a href="#projects">Moment</a> and <a href="#grid_slide">Grid</a>, two Android applications aimed at increasing motivation and mentorship relations among the youth.</p>
+                    <p>Emergence is a startup that has yet to launch. The vision is to inspire ambitious lifestyles among young adults. Currently, Emergence consists of <a id="to-moment" href="#projects">Moment</a> and <a id="to-grid" href="#projects">Grid</a>, two Android applications aimed at increasing motivation and mentorship relations among the youth.</p>
                 </div>
                 <div class="col-sm-4">
                     <h3>Android Developer</h3>
@@ -190,20 +154,6 @@
                         <div class="col-sm-2"></div>
                     </div>
                     <div class="row" style="padding-left: 5%; padding-right: 5%;">
-    <!--
-                        <div class="col-sm-6">
-                            <h3 style="text-decoration: underline">ELEC 201 - Circuit Analysis I</h3>
-                            <h3 style="text-decoration: underline">CPSC 259 - Data Structures and Algorithms for Electrical Engineers</h3>
-                            <h3 style="text-decoration: underline">CPSC 261 - Basics of Computer Systems</h3>
-                            <p>Solved the Dining Philosophers problem in C utilizing thread management primitives in Linux, including mutexes and condition variables</p>
-                        </div>
-                        <div class="col-sm-6">
-                            <h3 style="text-decoration: underline">CPEN 211 - Introduction to Microcomputers</h3>
-                            <p>Created a multitasking operating system that increments a counter and displays it on the DE1-SoC LEDs and displays keyboard inputs on the Altera Monitor Program terminal window through various interrupt service routines in ARMv7</p>
-                            <h3 style="text-decoration: underline">ELEC 291 - Electrical Engineering Design Studio I</h3>
-                            <p>Designed, assembled, and programmed an autonomous robot and a controllable guide wire transmitter. The robot follows the path of the guidewire by analyzing the magnetic field strength and by manipulating the magnetic field produced by the guide wire, the transmitter is able to send commands to the robot to operate forwards and backwards, turn right or left at the next intersection, start and stop at any point, or turn 180 degrees.</p>
-                        </div>
-    -->
                         <h3 style="text-decoration: underline">ELEC 201 - Circuit Analysis I</h3>
                         <h3 style="text-decoration: underline">CPSC 259 - Data Structures and Algorithms for Electrical Engineers</h3>
                         <h3 style="text-decoration: underline">CPSC 261 - Basics of Computer Systems</h3>
@@ -569,6 +519,40 @@
                         window.location.hash = hash;
                       });
                     } // End if
+                });
+                
+                // responsve scroll for moment link in about paragraph
+                $("#to-moment").on('click', function(event) {
+                    if(this.hash !== "") {
+                        // scroll down page
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
+                            window.location.hash = hash;
+                        });
+                        
+                        // change slide
+                        $("#carousel-example-generic").carousel(1);
+                    }
+                });
+                
+                // responsve scroll for grid link in about paragraph
+                $("#to-grid").on('click', function(event) {
+                    if(this.hash !== "") {
+                        // scroll down page
+                        event.preventDefault();
+                        var hash = this.hash;
+                        $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                        }, 900, function(){
+                            window.location.hash = hash;
+                        });
+                        
+                        // change slide
+                        $("#carousel-example-generic").carousel(0);
+                    }
                 });
 
                 $(window).scroll(function() {

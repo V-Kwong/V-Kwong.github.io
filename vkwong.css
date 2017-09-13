@@ -437,6 +437,12 @@ footer {
         background-color: rgba(255, 255, 255, 0.7);
         padding: 10px;
     }
+    #ece_logo {
+        margin: 10px;
+    }
+    #education h3, #education h4, #education p {
+         font-size: 0.8em;
+    }
     #first-slider .carousel-control {
         margin: -50px;
         width: 5%;
@@ -447,185 +453,7 @@ footer {
         height: 100%;
         width: 100%;
     }
-    .carousel-inner .item .container {
-        margin-top: -10px;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        top: 0;
-        left: 0;
-        right: 0;
+    .slide4 {
+        margin-top: -5px;
     }
 }
-
-/* Nexus 4 */
-/*
-@media screen and (max-width: 384) {
-    /*.main-left {
-        margin: 15% 0px 0px 0px;
-    }
-    #main_logo {
-        width: 50%;
-        height: auto;
-    }
-    #google_play_icon {
-        display: inline-block;
-        margin: -15px 0px -35px 0px;
-        width: 80%;
-    }
-    .main-right {
-        margin: 20% 0px 0px -11.5%;
-    }
-    #main_nexus {
-        width: 110%;
-        height: auto;
-        margin-bottom: -21%;
-    }
-    #slogan {
-        width: 81.5%;
-        height: auto;
-        position: absolute;
-        top: 0;
-        margin: 20% 0px 0px 8.9%;
-        opacity: 0;
-        animation-fill-mode: forwards;
-    }
-    .double-nexus {
-        width: 323px;
-        height: 475px;
-        margin-left: -7%;
-    }
-}
-*/
-
-/*
-@media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-}
-*/
-
-/* Landscape phones and down */
-/*
-@media screen and (max-width: 480px) {
-    .notif {
-        -webkit-animation-delay: 2.5s;
-        animation-delay: 2.5s;
-    }
-}
-*/
-
-/* Landscape phone to portrait tablet */
-/*
-@media screen and (min-width: 481px) and (max-width: 767px) {
-    .notif {
-        -webkit-animation-delay: 2.5s;
-        animation-delay: 2.5s;
-    }
-}
-*/
-
-/* Portrait tablet to landscape and desktop */
-/*
-@media screen and (min-width: 768px) and (max-width: 979px) {
-    
-}
-*/
-
-/* Laptop */
-/*
-@media screen and (min-width: 1170px) {
-    /*#about h2 {
-        margin-bottom: 10px;
-    }
-    .main {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        position: relative;
-        background: #BEBEBE;
-    }
-    .main-left {
-        margin: 3.5% 0 0 0;
-    }
-    #google_play_icon {
-        max-width:250px;
-        margin:30px 0 15px -60px;
-    }
-    .main-right {
-        position: relative;
-        display: inline;
-        margin: 0px 0px -7% 0px;
-    }
-    #slogan {
-        position: absolute;
-        margin: 21.2% 0% 0% 9.4%;
-        animation-fill-mode: forwards;
-    }
-    .about h4 {
-        margin: 1.5% 8% 0 8%;
-    }
-    .single-nexus {
-        width:70%;
-        height: auto;
-    }
-    .double-nexus {
-        width:95%;
-        height: auto;
-    }
-}
-*/
-
-/* Large desktop */
-/*
-@media screen and (min-width: 1824px) {
-    p {
-        font-size: 1.05em;
-    }
-    #about h2 {
-        margin-bottom: 10px;
-    }
-    .col-centered{
-        width: 66.67%;
-    }
-    .main {
-        width: 100%;
-        height: 100%;
-        margin: 0 auto;
-        position: relative;
-        background: #BEBEBE;
-    }
-    .main-left {
-        margin: 3.5% 0 0 0;
-    }
-    #google_play_icon {
-        max-width:250px;
-        margin:30px 0 15px -60px;
-    }
-    .main-right {
-        position: relative;
-        display: inline;
-        margin: 0px 0px -7% 0px;
-        max-width: 611px;
-        max-height: 627px;
-    }
-    #slogan {
-        position: absolute;
-        margin: 20.7% 0% 0% 9.4%;
-        animation-fill-mode: forwards;
-    }
-    .about h4 {
-        margin: 1.5% 12.5% 0 12.5%;
-    }
-    .single-nexus {
-        width:60%;
-        height: auto;
-    }
-    .double-nexus {
-        width:81.5%;
-        height: auto;
-    }
-}*/
