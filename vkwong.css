@@ -252,14 +252,15 @@ h4 {
     left: 0;
     right: 0;
 }
-#first-slider h3{
-  animation-delay: 1s;
-}
-#first-slider h4 {
-  animation-delay: 2s;
-}
-#first-slider h2 {
-  animation-delay: 3s;
+.carousel-inner .item .container-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 #first-slider .carousel-control {
     width: 5%;
@@ -437,6 +438,9 @@ footer {
         background-color: rgba(255, 255, 255, 0.7);
         padding: 10px;
     }
+    #ubc_logo {
+        margin: 10px;
+    }
     #ece_logo {
         margin: 10px;
     }
@@ -449,11 +453,8 @@ footer {
         text-shadow: none;
     }
     #first-slider .carousel .item {
-        min-height: 750px;
+        min-height: 700px;
         height: 100%;
         width: 100%;
-    }
-    .slide4 {
-        margin-top: -5px;
     }
 }
