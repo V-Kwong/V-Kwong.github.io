@@ -403,6 +403,12 @@ footer {
     padding: 10px 16px 15px 16px;
 }
 
+#contact {
+    padding: 60px 60px 5px 60px;
+    width: 100%;
+    height: auto;
+}
+
 .slideanim {visibility:hidden;}
 .slide {
     animation-name: slide;
