@@ -527,6 +527,9 @@ footer {
         background-color: rgba(255, 255, 255, 0.7);
         padding: 10px;
     }
+    .main-left-wrapper {
+        background-color: rgba(255, 255, 255, 0);
+    }
     .main-left h3 {
         font-size: 1em;
         margin: 5px;
