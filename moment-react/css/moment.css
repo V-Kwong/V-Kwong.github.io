@@ -19,6 +19,16 @@
   top: 2%; 
   left: 3%;
   z-index: 999;
+  transition: opacity 0.5s ease;
+}
+
+.vk-logo:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.carousel-item {
+  background-color: #c2c2c2;
 }
 
 .description {

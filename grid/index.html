@@ -26,50 +26,104 @@
   <body>
 
     <header>
-      <div class="vk-logo">
-        <img src="../assets/triangle-left.svg">
-        <img src="../assets/Main/Navigation_Logo.png" width=103 height=46 alt='Vincent Kwong'>
-      </div>
+      <a href="../">
+        <div class="vk-logo">
+          <img src="../assets/triangle-left.svg">
+          <img src="../assets/Main/Navigation_Logo.png" width=103 height=46 alt='Vincent Kwong'>
+        </div>
+      </a>
       
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+        
         <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselIndicators" data-slide-to="4"></li>
         </ol>
+        
         <div class="carousel-inner" role="listbox">
+          
           <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item active" >
             <div class="carousel-caption d-none d-md-block">
               <h3>First Slide</h3>
               <p>This is a description for the first slide.</p>
             </div>
           </div>
+          
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item">
             <div class="carousel-caption d-none d-md-block">
               <h3>Second Slide</h3>
               <p>This is a description for the second slide.</p>
             </div>
           </div>
+          
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('http://placehold.it/1900x1080')">
+          <div class="carousel-item">
             <div class="carousel-caption d-none d-md-block">
               <h3>Third Slide</h3>
               <p>This is a description for the third slide.</p>
             </div>
           </div>
+          
+          <!-- Slide Four - Set the background image for this slide in the line below -->
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Fourth Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+          
+          <!-- Slide Five - Set the background image for this slide in the line below -->
+          <div class="carousel-item">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Fifth Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+          
         </div>
+        
       </div>
     </header>
 
-    <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <h1>Half Slider by Start Bootstrap</h1>
-        <p>The background images for the slider are set directly in the HTML using inline CSS. The rest of the styles for this template are contained within the
-          <code>half-slider.css</code>
-          file.</p>
+    <section class="description">
+      <div class="container-fluid">
+        
+        <div class="row">
+          <div class="title col-3">
+            Behind Grid
+          </div>
+          <div class="text col-9">
+            Remember when that twelve year old thanked you for being a great role model? Remember when you were so sure of your abilities, yet you lost the competition? The overwhelming sense of accomplishment that made you feel as if nothing could stop you. How disappointed you were in yourself and the swearing of redemption. Don't forget these sparks of passion and emotion.
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="title col-3">
+            Technology
+          </div>
+          <div class="text col-9">
+            Java, Android Studio, Google Firebase, Node.js.
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="title col-3">
+            What's Next?
+          </div>
+          <div class="text col-9">
+            <b>1.</b> Moment Browser Extension 
+            <br>
+            <b>2.</b> Integration of AWS backend
+            <br>
+            <b>3.</b> Launch to App Store, Google Play, Firefox Add-Ons
+          </div>
+        </div>
+        
       </div>
     </section>
 

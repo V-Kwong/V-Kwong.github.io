@@ -5,7 +5,7 @@
  */
 
 .carousel-item {
-  height: 65vh;
+  height: 60vh;
   min-height: 300px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -19,4 +19,48 @@
   top: 2%; 
   left: 3%;
   z-index: 999;
+  transition: opacity 0.5s ease;
+}
+
+.vk-logo:hover {
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+.carousel-item {
+  background-color: #c2c2c2;
+}
+
+.description {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+}
+
+.title {  
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #303030;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.text {
+  padding-left: 25px;
+  border-left-style: solid;
+  border-left-width: 2px;
+  border-left-color: rgba(211, 47, 47, 1);
+  text-align: justify;
+  font-size: 14px;
 }
