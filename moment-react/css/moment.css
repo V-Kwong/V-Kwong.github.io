@@ -23,12 +23,30 @@
 }
 
 .vk-logo:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  opacity: 0.75;
+  filter: alpha(opacity=75); /* For IE8 and earlier */
 }
 
 .carousel-item {
-  background-color: #c2c2c2;
+  background: linear-gradient(141deg, #ffe001 0%, #dec306 51%, #a6940e 75%);
+}
+
+.carousel-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50%;
+}
+
+.app-text {
+  margin: 2%;
+  margin-top: 3%;
+  text-align: center;
 }
 
 .description {
