@@ -23,12 +23,13 @@
 }
 
 .vk-logo:hover {
-  opacity: 0.75;
-  filter: alpha(opacity=75); /* For IE8 and earlier */
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
 .carousel-item {
-  background: linear-gradient(141deg, #ffe001 0%, #dec306 51%, #a6940e 75%);
+/*  background: linear-gradient(141deg, #ffe001 0%, #dec306 51%, #a6940e 75%);*/
+  background: linear-gradient(141deg, #d32f2f 0%, #bb2f2f 51%, #922f2f 75%);
 }
 
 .carousel-content {
