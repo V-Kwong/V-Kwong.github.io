@@ -116,6 +116,7 @@
   }
   .description .title {
     letter-spacing: 0px;
+    padding: 0;
   }
 } 
 
