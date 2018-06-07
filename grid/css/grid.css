@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-half-slider/blob/master/LICENSE)
  */
 
+.carousel-inner {
+  background: linear-gradient(141deg, #d32f2f 0%, #bb2f2f 51%, #922f2f 75%);
+}
+
 .carousel-item {
   height: 60vh;
   min-height: 300px;
@@ -12,6 +16,15 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /*  background: linear-gradient(141deg, #ffe001 0%, #dec306 51%, #a6940e 75%);*/
+}
+
+.carousel-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .vk-logo {
@@ -23,21 +36,12 @@
 }
 
 .vk-logo:hover {
-  opacity: 0.6;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
 }
 
-.carousel-item {
-  background-color: #c2c2c2;
-}
-
-.description {
-  height: 40vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0px;
-  margin: 0px;
+.carousel-content .row {
+  width: 60%;
 }
 
 .row {
@@ -46,6 +50,16 @@
   justify-content: center;
   padding: 10px;
   margin: 10px;
+}
+
+.logo {
+  height: 50%;
+}
+
+.app-text {
+  margin: 2%;
+  margin-top: 3%;
+  text-align: center;
 }
 
 .title {  
@@ -57,10 +71,70 @@
 }
 
 .text {
+  font-size: 14px;
+  margin-top: 5%;
+}
+
+.gif {
+  width: 150px;
+  height: auto;
+  margin: 10px;
+}
+
+.description {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+
+.description .text {
+  margin: 0;
   padding-left: 25px;
   border-left-style: solid;
   border-left-width: 2px;
   border-left-color: rgba(211, 47, 47, 1);
   text-align: justify;
-  font-size: 14px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .description {
+    min-height: 550px;
+  }
+  .description .title {
+    letter-spacing: 0px;
+  }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .description {
+    min-height: 400px;
+  }
+  .description .title {
+    letter-spacing: 0px;
+  }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .description {
+    min-height: 300px;
+  }
+  .description .title {
+    letter-spacing: 1px;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
