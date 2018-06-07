@@ -96,7 +96,7 @@ h4 {
 
 .main-left-wrapper {
     background-color: rgba(255, 255, 255, 0.5);
-    padding: 20px 0 20px 0;
+    padding: 10px;
 }
 
 .main_logo {
@@ -400,6 +400,42 @@ h4 {
     height: auto;
     max-width: 252.5px;
     max-height: 235px;
+}
+
+.hover-btn{
+  margin: 2%;
+  background:#d32f2f;
+  color:#fff;
+  border:none;
+  position:relative;
+  padding:0.7em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+.hover-btn:hover{
+  background:#fff;
+  color:#d32f2f;
+}
+.hover-btn:before,.hover-btn:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #d32f2f;
+  transition:400ms ease all;
+}
+.hover-btn:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.hover-btn:hover:before,.hover-btn:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 .back-to-top {
