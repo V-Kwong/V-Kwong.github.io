@@ -21,6 +21,23 @@ $(document).ready(function () {
             });
         } // End if
     });
+  
+  // responsive scroll for emergence link in about paragraph
+    $("#to-emergence").on('click', function (event) {
+        if (this.hash !== "") {
+            // scroll down page
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function () {
+                window.location.hash = hash;
+            });
+
+            // change slide
+            $("#carousel-example-generic").carousel(2);
+        }
+    });
 
     // responsive scroll for moment link in about paragraph
     $("#to-moment").on('click', function (event) {

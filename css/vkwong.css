@@ -467,6 +467,11 @@ input[type=radio]:checked + label::after {
     max-width: 200px;
 }
 
+#e_logo {
+  width: 45%;
+  height: auto;
+}
+
 #my_logo {
     width: 75%;
     height: auto;
