@@ -52,7 +52,7 @@ $(document).ready(function () {
             });
 
             // change slide
-            $("#carousel-example-generic").carousel(1);
+            $("#carousel-example-generic").carousel(0);
         }
     });
 
@@ -69,7 +69,7 @@ $(document).ready(function () {
             });
 
             // change slide
-            $("#carousel-example-generic").carousel(0);
+            $("#carousel-example-generic").carousel(1);
         }
     });
 
