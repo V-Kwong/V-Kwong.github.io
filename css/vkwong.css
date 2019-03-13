@@ -257,19 +257,6 @@ h5 {
   left: 4em;
 /*  width: 100%;*/
 }
-.timeline-event-copy h3 {
-  font-size: 1.75em;
-}
-.timeline-event-copy h4 {
-  font-size: 1.2em;
-  margin-bottom: 1.2em;
-}
-.timeline-event-copy strong {
-  font-weight: 700;
-}
-.timeline-event-copy p:not(.timeline-event-thumbnail) {
-  padding-bottom: 1.2em;
-}
 
 .timeline-event-icon {
   -moz-transition: -moz-transform 0.2s ease-in;
@@ -300,6 +287,10 @@ h5 {
   padding: 0.25em 1em 0.2em 1em;
 }
 
+.timeline-event-copy h5 {
+  margin-top: 1.2em;
+}
+
 .company_logo {
 /*    width: 100%;*/
 /*    height: auto;*/
@@ -307,6 +298,16 @@ h5 {
   max-width: 263px;
   max-height: 118px;
   margin: 1em 0;
+}
+
+.employment_period {
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.employment_desc {
+  margin: 0.75em 0;
+  padding: 0;
 }
 
 /********************************/
