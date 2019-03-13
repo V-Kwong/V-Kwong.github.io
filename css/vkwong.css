@@ -218,9 +218,9 @@ h5 {
 }
 
 .timeline {
-  margin: 1em auto;
+/*  margin: 1em auto;*/
   position: relative;
-  max-width: 80%;
+  max-width: 85%;
   list-style-type: none;
 }
 .timeline:before {
@@ -229,7 +229,7 @@ h5 {
   margin-left: -1px;
   position: absolute;
   top: 0;
-  left: 2em;
+  left: 4em;
   width: 2px;
   height: 100%;
 }
@@ -254,8 +254,8 @@ h5 {
   padding: 2em 0 0 1em;
   position: relative;
   top: -1.875em;
-  left: 4em;
-/*  width: 100%;*/
+  left: 8em;
+/*  width: 90%;*/
 }
 
 .timeline-event-icon {
@@ -273,7 +273,7 @@ h5 {
   margin: 0.5em 0.5em 0.5em -0.5em;
   position: absolute;
   top: 0;
-  left: 2em;
+  left: 5em;
   width: 1em;
   height: 1em;
 }
@@ -695,4 +695,18 @@ footer {
         height: 100%;
         width: 100%;
     }
+  .timeline {
+    max-width: 100%;
+  }
+  .timeline:before {
+    left: -1em;
+  }
+  .timeline-event-copy {
+    left: 1em;
+  }
+
+  .timeline-event-icon {
+    left: -0.75em;
+  }
+
 }
