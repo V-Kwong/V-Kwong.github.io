@@ -87,7 +87,7 @@ h5 {
     position: relative;
     background-color: #BEBEBE;
     margin-top: 50px;
-    padding: 60px 60px 50px 60px;
+    padding: 100px 60px 50px 60px;
     background-image: url(assets/Main/main_background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -95,13 +95,13 @@ h5 {
 }
 
 .main-left {
-    width: 45%;
+    width: 40%;
     height: auto;
 }
 
 .main-left-wrapper {
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 25px 10px;
 }
 
 .main_logo {
@@ -109,6 +109,10 @@ h5 {
     height: auto;
     max-width: 505px;
     max-height: 470px;
+/*
+  max-width: 252.5px;
+    max-height: 235px;
+*/
   padding-top: 5px;
 }
 
